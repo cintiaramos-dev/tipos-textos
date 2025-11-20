@@ -1,0 +1,142 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* BODY */
+body {
+    background: #f3f3f3;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+/* BOTÃO FIXO NO TOPO */
+.toggle-top {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    background: #333;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.toggle-top:hover {
+    background: #555;
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    text-align: center;
+    margin: 60px 0 25px;
+    color: #333;
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+    background: #333;
+    color: white;
+    padding: 14px;
+    font-size: 18px;
+}
+
+table td {
+    padding: 14px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    color: #444;
+}
+
+table tr:hover td {
+    background: #f6f6f6;
+}
+
+/* CARDS */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.card h3 {
+    margin-top: 15px;
+    color: #666;
+}
+
+.card ul {
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+/* TEMA ESCURO */
+.dark {
+    background: #1a1a1a;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark li,
+.dark p {
+    color: #eee;
+}
+
+.dark table {
+    background: #2a2a2a;
+}
+
+.dark table th {
+    background: #444;
+}
+
+.dark table td {
+    color: #ddd;
+    border-color: #555;
+}
+
+.dark .card {
+    background: #2a2a2a;
+}
+
+.dark .toggle-top {
+    background: #888;
+    color: #000;
+}
