@@ -105,6 +105,61 @@ table tr:hover td {
     margin-left: 20px;
     margin-top: 6px;
 }
+.cards-comparacao {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 40px auto;
+    flex-wrap: wrap; /* permite empilhar no celular */
+}
+
+.card-comp {
+    background: #fff;
+    width: 420px; /* controla o tamanho dos cards */
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card-comp:hover {
+    transform: scale(1.03);
+}
+
+/* Títulos */
+.card-comp h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+/* Itens */
+.card-comp .item {
+    margin-bottom: 18px;
+}
+
+.card-comp .item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.card-comp .item p {
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Modo escuro */
+.dark .card-comp {
+    background: #2a2a2a;
+    color: #eee;
+}
+.dark .card-comp h2,
+.dark .card-comp h3,
+.dark .card-comp p {
+    color: #eee;
+}
 
 /* TEMA ESCURO */
 .dark {
